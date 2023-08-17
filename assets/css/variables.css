@@ -1,0 +1,19 @@
+/*!
+ * Module 2 - Personal Profile Application 
+ * Copyright 2023 
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Carleton Bootcamp - https://courses.bootcampspot.com/courses/4027
+ * CARL-VIRT-FSF-PT-07-2023-U-LOLC-MTTH
+ * 
+ * Author: Gustavo Miller 
+ * Date: August 16th, 2023
+ * File: /assets/css/variables.css
+ *
+ * Description: Contains all the variables used throughout the application
+ */
+
+:root {
+  --font-size-regular: 1em;
+  --font-size-increased: 1.5em;
+  --header-text-color: #d9dcd6;
+}
