@@ -13,59 +13,30 @@
 */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-size: var(--font-size-regular);
+    min-height: 100vh;
+    background-color: rgb(176, 187, 198);
+  }
+  
+  #main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: var(--font-size-regular);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: flex-start;
-}
+  #about{
+    display: block;
+  }
+  #experience{
+    display: block;
+  }
 
-#main {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.data-section ol {
-  display: flex;
-  flex-direction: column;
-  list-style: circle;
-  padding-left: 10px;
-  margin: 0 30px;
-}
-.data-section .margin-increase{
-  margin-top: 20px;
-}
-
-/*--------------------------------------------------------------
-# Section 
---------------------------------------------------------------*/
-.section-title {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  flex-direction: column;
-  text-align: center;
-  border: 1px solid pink;
-  margin: 10px;
-  padding: 30px;
-}
-
-.section-title h1 {
-  font-size: 2.5em;
-}
-
-.section-title .about-column {
-  border: 1px solid red;
-  width: 50%;
-}
-
-.columns-section {
-  flex-direction: row;
-}
+  #hero{
+    display: block;
+  }

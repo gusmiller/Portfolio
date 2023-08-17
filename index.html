@@ -11,41 +11,35 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/variables.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/about.css">
-    <link rel="stylesheet" href="./assets/css/hero.css">
+
+    <!-- All these stylesheets files will be combined -->
     <link rel="stylesheet" href="./assets/css/header.css">
-    
+    <link rel="stylesheet" href="./assets/css/hero.css">
+    <link rel="stylesheet" href="./assets/css/flexcontainer.css">
+
 </head><!-- Header declarations and stylesheets among others -->
 
 <body>
-    <header class="header">
+
+    <header class="header stick-top">
 
         <h1>Gustavo Miller</h1>
         <!-- Navigation bar: anchor will navigate to the proper id -->
         <nav>
             <ul>
-                <li title="Navigate to main portal">
-                    <a href="#search-engine-optimization">Home</a>
-                </li>
-                <li title="Navigate to About me section">
-                    <a href="#about">About Me</a>
-                </li>
-                <li title="Navigate to Work experience">
-                    <a href="#experience">Work</a>
-                </li>
-                <li title="Navigate to the contact me form">
-                    <a href="#social-media-marketing">Contact me</a>
-                </li>
-                <li title="Will download a hard-copy of the PDF resume">
-                    <a href="#social-media-marketing">Resume</a>
+                <li title="Navigate to main portal"><a href="#top">Home</a></li>
+                <li title="Navigate to About me section"><a href="#about">About Me</a></li>
+                <li title="Navigate to Work experience"><a href="#experience">Work</a></li>
+                <li title="Navigate to the contact me form"><a href="#social-media-marketing">Contact me</a></li>
+                <li title="Will download a hard-copy of the PDF resume"><a href="#social-media-marketing">Resume</a>
                 </li>
             </ul>
         </nav><!-- Navigation bar here -->
 
-    </header>
+    </header><!-- Navigation bar: anchor will navigate to the proper id -->
 
     <!-- ======= Hero Section ======= -->
-    <section class="hero" title="Display coding mesh image with HTML and Javascript declarations">
+    <section id="hero" class="hero" title="Display coding mesh image with HTML and Javascript declarations">
 
         <div class="hero-container">
             <h1>Welcome to my Portfolio</h1>
@@ -56,34 +50,60 @@
 
     <main id="main">
 
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about">
-
-            <div class="section-title">
-                <h1>About Me</h1>
+        <section id="about" class="flex-container clear-background">
+            <div id="gradient-back" class="title">
+                <h3>About Me</h3>
             </div>
-
-            <div class="section-title columns-section">
-                <div class="about-column">
-                    <h3>My developing career</h3>
-                    <p class="italic-font">I have been a developer for most of my career which has been a very
-                        satisfying experience. Some of the skills I have are as follow:</p>
-                    <ol>
-                        <li>Developing applications from scratch.</li>
-                        <li>Design and model, simple and complex databases.</li>
-                        <li>Reverse engineering existing application</li>
-                        <li>Worked alone or as part of a team of developers</li>
-                    </ol>
+            <div class="section-wrap">
+                <div class="content">
+                    <h3>About me</h3>
                 </div>
-
-                <div class="about-column">
-                    <img width="230px" src="./assets/img/GustavoMiller 11152022.jpg" alt="Photo of Mr Miller">
+                <div class="single center-image">
+                    <img src="./assets/images/GustavoMiller 11152022.jpg" alt="Picture of Mr Miller" height="300">
                 </div>
-
             </div>
+            <hr>
+        </section><!-- About me section -->
 
-        </section>
+        <section id="experience" class="flex-container clear-background-alternate">
+            <div id="gradient-back" class="title"><h3>My Work Experience</h3></div>
+            <div class="section-wrap">
+                <div class="card">
+                    <div class="icon">
+                        <img src="./assets/images/onteck.jpg" alt="" height="64">
+                    </div>
+                    <h4 class="title">OntarioTECK</h4>
+                    <div class="description">Senior Systems Analyst / Database modeler. Develop applications in ASP.NET
+                        Core 7, MVC in C# language. Microsoft Office Automation expert in Visual Basic for Applications.
+                    </div>
+                </div><!-- End of Experience Card -->
+                <div class="card">
+                    <div class="icon">
+                        <img src="./assets/images/ncm.png" alt="" height="64">
+                    </div>
+                    <h4 class="title">New Connections Ministries</h4>
+                    <div class="description">Board of Directors member. Non for profit organization that helps incarcerated men in their spiritual needs.
+                    </div>
+                </div><!-- End of Experience Card -->
+                <div class="card">
+                    <div class="icon">
+                        <img src="./assets/images/ssc.webp" alt="" height="64">
+                    </div>
+                    <h4 class="title">Shares Services Canada</h4>
+                    <div class="description">Government of Canada agency responsible for advancing, consolidating and providing information technology services across federal government departments.
+                    </div>
+                </div><!-- End of Experience Card -->
+            </div>
+        </section><!-- Work Experience section -->
+
     </main>
+
+    <script>
+        $("a[href='#top']").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
+    </script>
 
 </body>
 
