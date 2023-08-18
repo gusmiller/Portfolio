@@ -16,7 +16,7 @@
   --font-size-regular: 1em;
   --font-size-increased: 1.5em;
   --font-size-double: 2em;
-  --header-text-color: #d9dcd6;
-  --application-theme:#2a607c;
-  --application-theme-alternate:#11d753;
+  --header-text-color: rgb(217, 220, 214);
+  --application-theme:rgb(42, 96, 124);
+  --application-theme-alternate:rgb(17, 215, 83);
 }

@@ -16,10 +16,40 @@
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/hero.css">
     <link rel="stylesheet" href="./assets/css/flexcontainer.css">
+    <link rel="stylesheet" href="./assets/css/experience.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
 
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgb(204, 140, 140);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
 </head><!-- Header declarations and stylesheets among others -->
 
 <body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <header class="header stick-top">
 
@@ -30,7 +60,7 @@
                 <li title="Navigate to main portal"><a href="#top">Home</a></li>
                 <li title="Navigate to About me section"><a href="#about">About Me</a></li>
                 <li title="Navigate to Work experience"><a href="#experience">Work</a></li>
-                <li title="Navigate to the contact me form"><a href="#social-media-marketing">Contact me</a></li>
+                <li title="Navigate to the contact me form"><a href="#contact">Contact me</a></li>
                 <li title="Will download a hard-copy of the PDF resume"><a href="#social-media-marketing">Resume</a>
                 </li>
             </ul>
@@ -38,7 +68,7 @@
 
     </header><!-- Navigation bar: anchor will navigate to the proper id -->
 
-    <!-- ======= Hero Section ======= -->
+    <!-- Hero Section -->
     <section id="hero" class="hero" title="Display coding mesh image with HTML and Javascript declarations">
 
         <div class="hero-container">
@@ -46,65 +76,143 @@
             <p>Coding websites with style</p>
         </div>
 
-    </section><!-- Hero section introduction -->
+    </section><!-- End of Hero section -->
 
     <main id="main">
 
-        <section id="about" class="flex-container clear-background">
-            <div id="gradient-back" class="title">
+        <!-- About me section -->
+        <section id="about" class="flex-container">
+            <div id="gradient-back" class="title mb">
                 <h3>About Me</h3>
             </div>
-            <div class="section-wrap">
+            <!-- Section wrap - we need text and an image -->
+            <div class="section-wrap mb">
                 <div class="content">
-                    <h3>About me</h3>
-                </div>
+                    <h3>"Keeping yourself competitive as a developer requires an specific learning skill"</h3>
+                    <p>I started my career a long time ago when computer OS was MS-Dos and Unix System. I then venture
+                        into Windows but continue in Unix Systems. I know multiple languages from Visual Basic to C#,
+                        HTML, CSS, Javascript</p><br />
+                    <p>Some of my skills include:</p>
+                    <ul>
+                        <li>Microsoft Access</li>
+                        <li>Microsoft SQL server</li>
+                        <li>ASP.Net Core/MVC 7</li>
+                        <li>Visual Basic, C# and Javascript</li>
+                    </ul>
+                    <br />
+                    <p>Recently started working at Department of National Defense (DND) as a Senior Business Analyst and
+                        web developer. I will be also performing reverse engineering and maintenance to existing
+                        applications</p>
+                </div><!-- End of About me context -->
                 <div class="single center-image">
                     <img src="./assets/images/GustavoMiller 11152022.jpg" alt="Picture of Mr Miller" height="300">
                 </div>
-            </div>
+            </div><!-- End Section wrap -->
             <hr>
-        </section><!-- About me section -->
+        </section><!-- End of About me section -->
 
-        <section id="experience" class="flex-container clear-background-alternate">
-            <div id="gradient-back" class="title"><h3>My Work Experience</h3></div>
+        <!-- Work Experience section -->
+        <section id="experience" class="flex-container">
+            <div id="gradient-back" class="title">
+                <h3>My Work Experience</h3>
+            </div>
+            <div class="intro">
+                <p>Forging a career is a slow process, it demands dedication and lots of work. Some build their careers
+                    in one company as for other they like the freedom, they are consultants. Consultants tent to have
+                    many company profiles. Here are some of mine:</p>
+            </div>
             <div class="section-wrap">
-                <div class="card">
+                <div id="ontario-teck" class="experience-card"><!-- Experience Card -->
                     <div class="icon">
                         <img src="./assets/images/onteck.jpg" alt="" height="64">
                     </div>
-                    <h4 class="title">OntarioTECK</h4>
+                    <h4 class="card-title mb">OntarioTECK</h4>
                     <div class="description">Senior Systems Analyst / Database modeler. Develop applications in ASP.NET
                         Core 7, MVC in C# language. Microsoft Office Automation expert in Visual Basic for Applications.
                     </div>
                 </div><!-- End of Experience Card -->
-                <div class="card">
+                <div id="newconnections" class="experience-card"><!-- Experience Card -->
                     <div class="icon">
                         <img src="./assets/images/ncm.png" alt="" height="64">
                     </div>
-                    <h4 class="title">New Connections Ministries</h4>
-                    <div class="description">Board of Directors member. Non for profit organization that helps incarcerated men in their spiritual needs.
+                    <h4 class="card-title">New Connections Ministries</h4>
+                    <div class="description">Board of Directors member. Non for profit organization that helps
+                        incarcerated men in their spiritual needs.
                     </div>
                 </div><!-- End of Experience Card -->
-                <div class="card">
+                <div id="sharedservices" class="experience-card"><!-- Experience Card -->
                     <div class="icon">
                         <img src="./assets/images/ssc.webp" alt="" height="64">
                     </div>
-                    <h4 class="title">Shares Services Canada</h4>
-                    <div class="description">Government of Canada agency responsible for advancing, consolidating and providing information technology services across federal government departments.
+                    <h4 class="card-title">Shares Services Canada</h4>
+                    <div class="description">Government of Canada agency responsible for advancing, consolidating and
+                        providing information technology services across federal government departments.
+                    </div>
+                </div><!-- End of Experience Card -->
+                <div id="transport" class="experience-card"><!-- Experience Card -->
+                    <div class="icon">
+                        <img src="./assets/images/tc.webp" alt="" height="64">
+                    </div>
+                    <h4 class="card-title">Transport Canada - Aviation Security</h4>
+                    <div class="description">Transport Canada is responsible for aviation security in Canada. The
+                        department develops, implements, and oversees Canada’s civil Aviation Security Program.
                     </div>
                 </div><!-- End of Experience Card -->
             </div>
-        </section><!-- Work Experience section -->
+        </section><!-- End Work Experience section -->
+
+        <!-- Contact me section -->
+        <section id="contact" class="flex-container">
+            <div id="gradient-back" class="title">
+                <h3>Contact Me</h3>
+            </div>
+            <div class="section-wrap">
+                <div class="single" style="margin:5px">
+                    <p>Gustavo Miller</p>
+                    <p>Senior Systems Analyst - Programmer</p>
+                    <p>31 rue Jean-Talon, Gatineau, QC J8T2Y4</p>
+                    <p><a href="mailto:gustavo.miller@miller-hs.com"></a>Gustavo Miller</p>
+                </div>
+                <div class="half-screen" style="border: 2px solid red;padding:15px">
+                    <form>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname">
+
+                        <label for="mmessage">Message</label>
+                        <input type="text" id="mmessage" name="mmessage">
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section><!-- End of contact me section -->
 
     </main>
 
     <script>
-        $("a[href='#top']").click(function () {
-            $("html, body").animate({ scrollTop: 0 }, "slow");
-            return false;
-        });
-    </script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
 
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>

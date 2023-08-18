@@ -1,0 +1,54 @@
+/*-------------------------------------------------------------------------------
+ This section are the cards in the My Work experience section
+ Description: These cards are the opportunities in my career; each card consist 
+ in: a card, an Icon, Title and a description.
+--------------------------------------------------------------------------------*/
+#experience{
+    background-color: rgb(187, 192, 179);
+    line-height: 1.5;
+    text-align: center;
+}
+
+#experience .experience-card{
+    width: 33.33333333%;
+    border: 2px dashed rgb(106, 152, 156); 
+    margin-bottom: 20px;
+    padding:5px;
+}
+
+#experience .description{
+    font-size: 16px;
+}
+
+#experience .card-title{
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.intro{
+    margin: 15px 5em 0 5em;
+}
+
+/*-------------------------------------------------------------------------------
+ This section handles the pseudo-class when it matches hover
+ Description: This section will be dynamic in the future. We need to think how 
+ this will be handled at that point     
+--------------------------------------------------------------------------------*/
+#experience .intro:hover,
+#ontario-teck:hover,
+#newconnections:hover,
+#sharedservices:hover,
+#transport:hover{
+    font-weight: 700;
+    color: brown;
+}
+
+#ontario-teck:hover,
+#newconnections:hover,
+#sharedservices:hover,
+#transport:hover{
+    border: 2px dashed rgb(142, 20, 161);
+    background-color: rgb(174, 163, 163); 
+}

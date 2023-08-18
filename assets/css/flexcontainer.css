@@ -1,90 +1,74 @@
+/*-------------------------------------------------------------------------------
+Flex container section - This flex container in where all sections will base
+from. It defines the working area and flex items to hold.
+--------------------------------------------------------------------------------*/
 .flex-container {
-    height: 70vh;
     display: flex;
     flex-wrap: wrap;
-    padding: 15px;
-    margin: 0 0 100px 00;
-    /* border: 2px solid rgb(121, 25, 51); */
+    margin-bottom: 50px;
+    padding-bottom: 10px;
 }
 
-.clear-background{
-    background-color: #aac1c1;
-}
-
-.clear-background-alternate{
-    background-color: #c7ceca;
-}
-
-.title {
-    width: 100%;
-    padding: 25px;
-    text-align: center;
-    font-size: var(--font-size-double);
-}
-
+/*-------------------------------------------------------------------------------
+Section wrap - This flex item will host different items which are common to all
+Sections - Title, image, headers and so
+--------------------------------------------------------------------------------*/
 .section-wrap {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 80%;
     align-items: flex-stretch;
-    border: 1px solid blue;
+    padding: 25px;
 }
 
-/** This section are the cards in the My Work experience section
-Description: These cards are the opportunities in my career; each
-card consist in: a card, an Icon, Title and a description */
-.section-wrap .card{
-    width: 33.33333333%;
-    border: 2px dashed paleturquoise; 
-    margin-bottom: 20px;
-    text-align: center;
-    padding:5px;
-}
-
-.section-wrap .icon{
+.section-wrap .icon {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
-}
-
-.section-wrap .icon img{
     margin-top: 24px;
 }
 
-.section-wrap .title{
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 18px;
-    text-transform: uppercase;
+.section-wrap h3 {
+    display: block;
+    font-weight: 400;
+    font-size: 26px;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    padding-bottom: 35px;
 }
 
-.section-wrap .description{
-    line-height: 24px;
-    font-size: 16px;
+.section-wrap p {
     line-height: 1.5;
 }
-/** End of section */
+
+/** End of section wrap */
 
 .content {
     width: 70%;
-    border: 1px solid rgb(110, 186, 166);
+    font-size: 22px;
+    font-family: "Noto Sans", "Helvetica Neue", "Helvetica", "Arial", "Liberation Sans", "Roboto", "Noto", sans-serif;
 }
 
 .single {
     width: 30%;
-    border: 1px solid rgb(217, 163, 231);
 }
 
-.center-image{
+.half-screen {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.center-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#gradient-back{
-    background-image: linear-gradient(to right, rgba(255,0,0,0), var(--application-theme));
-}
-#gradient-back-alternate{
-    background-image: linear-gradient(to right, rgba(255,0,0,0), var(--application-theme-alternate));
+/* Change the sections title gradient */
+#gradient-back {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), var(--application-theme));
 }
