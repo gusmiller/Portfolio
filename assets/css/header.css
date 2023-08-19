@@ -1,52 +1,65 @@
 /*------------------------------------------------------
-    Header section 
+Header section 
 -------------------------------------------------------*/
 .header {
-    /* Specify different font family for the header */
-    padding: 20px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-  }
-  
+  /* Specify different font family for the header */
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+.header nav {
+  /* Font family changed from header section. Float contents to right */
+  padding-top: 10px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: var(--font-navigation-options);
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  /* make sure elements in list are in-line */
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: var(--header-text-color);
+  font-style: italic;
+}
+
+/* Tablets - header changes font color */
+@media screen and (max-width: 1062px) {
   .header h1 {
-    display: inline-block;
-    font-size: 48px;
-  }
-  
-  .header nav {
-    /* Font family changed from header section. Float contents to right */
-    padding-top: 10px;
-    margin-right: 20px;
-    float: right;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: var(--font-size-double);
-  }
-  
-  .header nav ul {
-    list-style-type: none;
-  }
-  
-  .header nav ul li {
-    /* make sure elements in list are in-line */
-    display: inline-block;
-    margin-left: 25px;
-  }
-  
-  .header nav ul li a {
-    text-decoration: none;
-    color: var(--header-text-color);
-    font-style: italic;
-  }
-  
-  .header a:hover {
-    text-decoration: underline;
+    font-size: 24px;
   }
 
-  .stick-top{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
+  .header nav {
+    font-size: var(--font-navigation-tablet);
+    padding-top: 0;
+    margin-right: 20px;
+    }
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.stick-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}

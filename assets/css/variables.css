@@ -13,9 +13,15 @@
  */
 
 :root {
+  --hide-elements-develop: block;
+  --show-elements-develop: block;
+
+  --background-body-color:rgb(176, 187, 198);
   --font-size-regular: 1em;
   --font-size-increased: 1.5em;
-  --font-size-double: 2em;
+  --font-navigation-options: 2em;
+  --font-navigation-tablet:1.25em;
+  --font-size-double: 3em;
   --header-text-color: rgb(217, 220, 214);
   --application-theme:rgb(42, 96, 124);
   --application-theme-alternate:rgb(17, 215, 83);

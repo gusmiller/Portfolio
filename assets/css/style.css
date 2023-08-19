@@ -11,45 +11,19 @@
  *
  * Description: Contains all styles for application
 */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {margin: 0;padding: 0;box-sizing: border-box;}
+  body {font-family: "Open Sans", sans-serif;font-size: var(--font-size-regular);min-height: 100vh;background-color: var(--background-body-color);}
   
-  body {
-    font-family: "Open Sans", sans-serif;
-    font-size: var(--font-size-regular);
-    min-height: 100vh;
-    background-color: rgb(176, 187, 198);
-  }
+  ol, ul {margin-left: 25px;margin-top: 15px;list-style: square inside;}
+
+  #main {margin-top: 50px;margin-bottom: 50px;}
   
-  ol, ul {
-    margin-left: 25px;
-    margin-top: 15px;
-    list-style: square inside;
-  }
+  #about{display: var(--hide-elements-develop);}
+  #experience{display: var(--hide-elements-develop);}
+  #hero{display: var(--hide-elements-develop);}
+  #contact{display: var(--show-elements-develop);}
 
-  #main {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  #about{
-    display: none;
-  }
-  #experience{
-    display: none;
-  }
-
-  #hero{
-    display: none;
-  }
-
-  .mb{
-    margin-bottom: 25px;
-  }
+  .mb{margin-bottom: 25px;}
 
   .title {
     width: 100%;
