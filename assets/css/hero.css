@@ -3,24 +3,26 @@
 -------------------------------------------------------*/
 .hero {
   width: 100%;
-  height: 45vh;
+  height: 50vh;
   margin-bottom: 25px;
-  background: url(../images/portal-html-image-hero.jpg) top center;
-  background-size: cover;
   position: relative;
-  content: "";
-  alt: "";
+  text-align: center;
+  color: white;
 }
 
-.hero-image::before {
-  content: "Display coding mesh image with HTML and Javascript declarations";
-  position: absolute;
-  top: 0;
-  left: 0;
+.hero img {
   width: 100%;
   height: 100%;
-  text-indent: -9999px;
-  overflow: hidden;
+  object-fit: cover;
+}
+
+.hero .centered {
+  width: 600%;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+
+  transform: translate(-50%, -50%);
 }
 
 .hero .hero-container {

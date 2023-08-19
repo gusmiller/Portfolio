@@ -23,8 +23,6 @@
 
 <body>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
     <header class="header stick-top">
 
         <h1>Gustavo Miller</h1>
@@ -45,7 +43,8 @@
     <!-- Hero Section -->
     <section id="hero" class="hero" title="Display coding mesh image with HTML and Javascript declarations">
 
-        <div class="hero-container">
+        <img src="./assets/images/portal-html-image-hero.jpg" alt="Snow">
+        <div class="centered">
             <h1>Welcome to my Portfolio</h1>
             <p>Coding websites with style</p>
         </div>
@@ -64,9 +63,18 @@
                 <div class="content">
                     <h3 class="mt">"Keeping yourself competitive as a developer requires an specific learning skill"
                     </h3>
-                    <p>I started my career a long time ago when computer OS was MS-Dos and Unix System. I then venture
-                        into Windows but continue in Unix Systems. I know multiple languages from Visual Basic to C#,
-                        HTML, CSS, Javascript</p><br />
+                    <p>I started my career a long time ago when computer OS was
+                        <strong><span class="exaltword"
+                                title="MS-DOS, in full Microsoft Disk Operating System, the dominant operating system 
+                                for the personal computer (PC) throughout the 1980s.">MS-Dos</span></strong>
+                        and
+                        <strong><span class="exaltword"
+                                title="It is a family of multitasking, multi-user computer operating systems that 
+                                derive from the original AT&T Unix, whose development started in 1969">Unix
+                                System</span></strong>. I then venture into Windows but, continue operating and
+                        maintainin
+                        Unix Systems. I know multiple languages from Visual Basic to C#, HTML, CSS, Javascript
+                    </p><br />
                     <p>Some of my skills include:</p>
                     <ul>
                         <li>Microsoft Access</li>
@@ -114,8 +122,9 @@
                                 title="Microsoft ASP.Net - free and open-source web framework for developing web sites">ASP.Net</span>,
                             <span class="exaltword"
                                 title="Integrated Development Environment (IDE) developed by Microsoft to develop GUI (Graphical User Interface), console, Web applications, web apps, mobile apps, cloud, and web services, etc. ">Visual
-                                Studio</span> 2019 and 2022. The main language used in these application is C# but, there are other 
-                                languages used, such as Javascript and JScript
+                                Studio</span> 2019 and 2022. The main language used in these application is C# but,
+                            there are other
+                            languages used, such as Javascript and JScript
                         </p>
                     </div>
                 </article>
@@ -200,28 +209,6 @@
         </section><!-- End of contact me section -->
 
     </main>
-
-    <script>
-        // Get the button
-        const mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 </body>
 
 </html>

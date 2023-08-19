@@ -27,6 +27,9 @@ body {
 ol,
 ul {
   margin-left: 25px;
+  margin-top: 15px;
+  line-height: 1.5;
+  font-weight: 700;
   list-style: square inside;
 }
 
@@ -34,11 +37,6 @@ ul {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
-/* #about{display: var(--hide-elements-develop);}
-  #experience{display: var(--hide-elements-develop);}
-  #hero{display: var(--hide-elements-develop);}
-  #contact{display: var(--show-elements-develop);} */
 
 .mb {
   margin-bottom: 25px;
