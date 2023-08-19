@@ -1,8 +1,14 @@
-/*------------------------------------------------------
-Header section 
--------------------------------------------------------*/
+/*-------------------------------------------------------------------------------
+The header Flex container - This flex container contains the navigation link that 
+allow user to select the sections to review.
+It starts from the cellphone as a base size, then it changes based on device
+--------------------------------------------------------------------------------*/
 .header {
-  /* Specify different font family for the header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -11,17 +17,13 @@ Header section
 }
 
 .header h1 {
-  display: inline-block;
-  font-size: 48px;
+  font-size: 24px;
 }
 
 .header nav {
-  /* Font family changed from header section. Float contents to right */
   padding-top: 10px;
   margin-right: 20px;
-  float: right;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: var(--font-navigation-options);
+  font-size: 18px;
 }
 
 .header nav ul {
@@ -40,17 +42,26 @@ Header section
   font-style: italic;
 }
 
-/* Tablets - header changes font color */
-@media screen and (max-width: 1062px) {
-  .header h1 {
-    font-size: 24px;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .header nav {
-    font-size: var(--font-navigation-tablet);
-    padding-top: 0;
-    margin-right: 20px;
-    }
+    font-size: 22px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header h1{
+    font-size: 32px;
+  }
+  .header nav {
+    font-size: 24px;
+  }
 }
 
 .header a:hover {

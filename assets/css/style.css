@@ -11,23 +11,52 @@
  *
  * Description: Contains all styles for application
 */
-* {margin: 0;padding: 0;box-sizing: border-box;}
-  body {font-family: "Open Sans", sans-serif;font-size: var(--font-size-regular);min-height: 100vh;background-color: var(--background-body-color);}
-  
-  ol, ul {margin-left: 25px;margin-top: 15px;list-style: square inside;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  #main {margin-top: 50px;margin-bottom: 50px;}
-  
-  #about{display: var(--hide-elements-develop);}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--font-size-regular);
+  min-height: 100vh;
+  background-color: var(--background-body-color);
+}
+
+ol,
+ul {
+  margin-left: 25px;
+  list-style: square inside;
+}
+
+#main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* #about{display: var(--hide-elements-develop);}
   #experience{display: var(--hide-elements-develop);}
   #hero{display: var(--hide-elements-develop);}
-  #contact{display: var(--show-elements-develop);}
+  #contact{display: var(--show-elements-develop);} */
 
-  .mb{margin-bottom: 25px;}
+.mb {
+  margin-bottom: 25px;
+}
 
-  .title {
-    width: 100%;
-    padding: 25px;
-    text-align: center;
-    font-size: var(--font-size-double);
+.mt {
+  margin-top: 25px;
+}
+
+.title {
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  font-size: var(--font-size-double);
+}
+
+.exaltword:hover {
+  text-decoration: underline;
+  font-weight: 800;
+  font-style: italic;
 }

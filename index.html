@@ -56,13 +56,14 @@
 
         <!-- About me section -->
         <article id="about" class="flex-container">
-            <header class="title gradient-back">
+            <header class="title gradient-header-color">
                 <h3>About Me</h3>
             </header>
             <!-- Section wrap - we need text and an image -->
             <section class="section-wrap mb">
                 <div class="content">
-                    <h3>"Keeping yourself competitive as a developer requires an specific learning skill"</h3>
+                    <h3 class="mt">"Keeping yourself competitive as a developer requires an specific learning skill"
+                    </h3>
                     <p>I started my career a long time ago when computer OS was MS-Dos and Unix System. I then venture
                         into Windows but continue in Unix Systems. I know multiple languages from Visual Basic to C#,
                         HTML, CSS, Javascript</p><br />
@@ -87,25 +88,41 @@
 
         <!-- Work Experience section -->
         <article id="experience" class="flex-container">
-            <header class="title gradient-back">
+            <header class="title gradient-header-color">
                 <h3>My Work Experience</h3>
             </header>
-            <div class="intro">
+            <summary class="intro">
                 <p>Forging a career is a slow process, it demands dedication and lots of work. Some build their careers
                     in one company as for other they like the freedom, they are consultants. Consultants tent to have
                     many company profiles. Here are some of mine:</p>
-            </div>
-            <section id="contracts" class="section-wrap">
-                <article id="ontario-teck" class="experience-card"><!-- Experience Card -->
+            </summary>
+            <section class="section-wrap">
+                <article id="current-image" class="card experience-card">
                     <div class="icon">
-                        <img src="./assets/images/onteck.jpg" alt="" height="64">
+                        <img src="./assets/images/onteck.jpg" alt="" height="128">
                     </div>
                     <h4 class="card-title mb">OntarioTECK</h4>
                     <div class="description">Senior Systems Analyst / Database modeler. Develop applications in ASP.NET
                         Core 7, MVC in C# language. Microsoft Office Automation expert in Visual Basic for Applications.
                     </div>
-                </article><!-- End of Experience Card -->
-                <article id="newconnections" title="New Connections Ministries contract" class="experience-card"><!-- Experience Card -->
+                </article>
+                <article id="current-contract" class="card experience-card-current">
+                    <div>
+                        <p><strong>Senior Systems Analyst / Database modeler</strong></p><br />
+                        <p>Currently maintaining different websites. These websites have been developed in
+                            <span class="exaltword"
+                                title="Microsoft ASP.Net - free and open-source web framework for developing web sites">ASP.Net</span>,
+                            <span class="exaltword"
+                                title="Integrated Development Environment (IDE) developed by Microsoft to develop GUI (Graphical User Interface), console, Web applications, web apps, mobile apps, cloud, and web services, etc. ">Visual
+                                Studio</span> 2019 and 2022. The main language used in these application is C# but, there are other 
+                                languages used, such as Javascript and JScript
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section id="contracts" class="section-wrap">
+                <article id="newconnections" title="New Connections Ministries contract" class="card experience-card">
+                    <!-- Experience Card -->
                     <div class="icon">
                         <img src="./assets/images/ncm.png" alt="" height="64" alt="Icon statistic bars with arrow">
                     </div>
@@ -114,22 +131,37 @@
                         incarcerated men in their spiritual needs.
                     </div>
                 </article><!-- End of Experience Card -->
-                <article id="sharedservices" class="experience-card"><!-- Experience Card -->
+                <article id="sharedservices" title="Shared Services Canada" class="card experience-card">
+                    <!-- Experience Card -->
                     <div class="icon">
-                        <img src="./assets/images/ssc.webp" alt="" height="64" alt="Icon - circle with people's silhouette">
+                        <img src="./assets/images/ssc.webp" alt="" height="64"
+                            alt="Icon - circle with people's silhouette">
                     </div>
                     <h4 class="card-title">Shares Services Canada</h4>
                     <div class="description">Government of Canada agency responsible for advancing, consolidating and
                         providing information technology services across federal government departments.
                     </div>
                 </article><!-- End of Experience Card -->
-                <article id="transport" class="experience-card"><!-- Experience Card -->
+                <article id="transport" title="Transport Canada - Aviation Security" class="card experience-card">
+                    <!-- Experience Card -->
                     <div class="icon">
-                        <img src="./assets/images/tc.webp" alt="" height="64" alt="icon airport radar with multiple plane images">
+                        <img src="./assets/images/tc.webp" alt="" height="64"
+                            alt="icon airport radar with multiple plane images">
                     </div>
                     <h4 class="card-title">Transport Canada - Aviation Security</h4>
                     <div class="description">Transport Canada is responsible for aviation security in Canada. The
                         department develops, implements, and oversees Canada’s civil Aviation Security Program.
+                    </div>
+                </article><!-- End of Experience Card -->
+                <article id="dnd" title="Transport Canada - Aviation Security" class="card experience-card">
+                    <!-- Experience Card -->
+                    <div class="icon">
+                        <img src="./assets/images/tc.webp" alt="" height="64"
+                            alt="icon airport radar with multiple plane images">
+                    </div>
+                    <h4 class="card-title">Department of National Defense</h4>
+                    <div class="description">Department of National Defense is responsible for national security in
+                        Canada. It serves with the Navy, Army, Air Forces and Special Forces to defend Canadians.
                     </div>
                 </article><!-- End of Experience Card -->
             </section>
@@ -137,20 +169,20 @@
 
         <!-- Contact me section -->
         <section id="contact" class="flex-container">
-            <header class="title gradient-back">
+            <header class="title gradient-header-color">
                 <h3>Contact Me</h3>
             </header>
             <section class="section-wrap">
-                <data class="single" style="margin:5px">
+                <data class="single">
                     <p>Gustavo Miller</p>
                     <p>Senior Systems Analyst - Programmer</p>
                     <p>31 rue Jean-Talon, Gatineau, QC J8T2Y4</p>
                     <p><a href="mailto:gustavo.miller@miller-hs.com">gustavo.miller@miller-hs.com</a></p>
-                    <figure class="image-card">
+                    <figure class="image-card callme">
                         <img src="./assets/images/calme.png" alt="call me sign handwritten post">
                     </figure>
                 </data>
-                <data class="half-screen" >
+                <data class="half-screen">
                     <form>
                         <label for="fname">First Name</label>
                         <input type="text" id="fname" name="fname">
