@@ -23,36 +23,37 @@ Build a website in where potential employers can have a taste of what we can do,
 
 The website has been designed in differente sections which are based on a wireframe designed to hold each of these sections. I have used several wireframes in order to keep the flow in the application. For example the about page was based on the following wireframe:
 
-<img src="./Documentation/images/wireframe-01.png">
+<img src="./Documentation/images/wireframe-01.png" height="350">
 
 ## Hero Website Portal
 The portal section shows just a splash screen as form of presentation with a slogan. This portal gives space to the user to select the options from the navigation bar. The navigation bar present with the followin options:
 
-    <ul>
-        <li>Home - will return user to splash / hero screen.</li>
-    </ul>
-    
+<ul>
+<li><strong>Home</strong> - This will return to the hero page ( application portal).</li>
+<li><strong>About me</strong> - Presents user with About me information.</li>
+<li><strong>Work</strong> - Includes the latest contract a few other ones.</li>
+<li><strong>Contact me</strong> - Allows user to create a form to be used to contact me.</li>
+<li><strong>Resume</strong> - Allows user to download (pdf) resume.</li>
+</ul>
+
 ## About Us
 In this section I present myself share with the reader information related to my career. What I am capable of doing and some of the tools that I have used in the past.
+
+<img src="./Documentation/images/aboutme.png" height="350">
  
 ## My Experience Page
+This page describes about the contracts and a brief description of what I have done. Sections will highlight when mouse hovers each of them.
+
+<img src="./Documentation/images/workexperience.png" height="350">
+
 ## Download My Resume Page
+This page is used to download my resume. This is linked to an actual resume I have on the web.
+
+<img src="./Documentation/images/resume.png"  height="350">
+
 ## Contact Me Page
 
-The purpose of the refactoring is to implement and use developing standards -such as semantic tags. The website works 'as-is' -browsers understand and render page correctly, but it is not clearly structured. [W3Schools](https://www.w3schools.com/html/html5_semantic_elements.asp) divides the work area very nicely, as we can appreciate in the image
-
-![Web Site Elements](https://www.w3schools.com/html/img_sem_elements.gif "Web Sites Main areas")
-
-Semantic HTML tags used in the process:
-<ol>
-<li><strong>Main</strong> - Specifies the main content of a document. It</li>
-<li><strong>Header</strong> - Specifies a header for a document or section</li>
-<li><strong>Nav</strong> - Defines navigation links</li>
-<li><strong>Section</strong> - Defines a section in a document</li>
-<li><strong>Figure</strong> - Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</li>
-<li><strong>Article</strong> - Defines independent, self-contained content</li>
-<li><strong>Aside</strong> - Defines content aside from the page content</li>
-</ol>
+<img src="./Documentation/images/contactme.png"  height="350">
 
 ## Updating GitHub Repository
 Based on Wikipedia Github is define as "a platform and cloud-based service for software development and version control using Git, allowing developers to store and manage their code." As developers it is important that we keep our versions, in case reversing changes is necessary.
