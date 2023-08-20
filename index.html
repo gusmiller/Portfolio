@@ -26,7 +26,7 @@
                 <li title="Navigate to About me section"><a href="#about">About Me</a></li>
                 <li title="Navigate to Work experience"><a href="#experience">Work</a></li>
                 <li title="Navigate to the contact me form"><a href="#contact">Contact me</a></li>
-                <li title="Will download a hard-copy of the PDF resume"><a href="#social-media-marketing">Resume</a>
+                <li title="Will download a hard-copy of the PDF resume"><a href="#resume">Resume</a>
                 </li>
             </ul>
         </nav><!-- Navigation bar here -->
@@ -36,7 +36,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero" title="Display coding mesh image with HTML and Javascript declarations">
 
-        <img src="./assets/images/portal-html-image-hero.jpg" 
+        <img src="./assets/images/portal-html-image-hero.jpg"
             alt="Graphical banner accross the screen with HTML and Javascript declarations">
         <div class="centered">
             <h1>Welcome to my Portfolio</h1>
@@ -48,22 +48,25 @@
     <main id="main">
 
         <!-- About me section -->
-        <article id="about" class="flex-container">
+        <article id="about" class="about flex-container">
             <header class="title gradient-header-color">
                 <h3>About Me</h3>
             </header>
+            <summary class="intro">
+                <p>My name is <strong>Gustavo Miller</strong>, I am a <span class="exaltword">Senior Systems
+                        Analyst</span>
+                    and <span class="exaltword">Database modeler</span>, self-taught for most of my of my career.
+                    Technology grows faster than one can learn new skills.
+                    Have been serving clients for the last few decades of my career.</p>
+            </summary>
             <!-- Section wrap - we need text and an image -->
             <section class="section-wrap mb">
                 <div class="content">
-                    <h3 class="mt">"Keeping yourself competitive as a developer requires an specific learning skill"
-                    </h3>
                     <p>I started my career a long time ago when computer OS was
-                        <strong><span class="exaltword"
-                                title="MS-DOS, in full Microsoft Disk Operating System, the dominant operating system 
+                        <strong><span class="exaltword" title="MS-DOS, in full Microsoft Disk Operating System, the dominant operating system 
                                 for the personal computer (PC) throughout the 1980s.">MS-Dos</span></strong>
                         and
-                        <strong><span class="exaltword"
-                                title="It is a family of multitasking, multi-user computer operating systems that 
+                        <strong><span class="exaltword" title="It is a family of multitasking, multi-user computer operating systems that 
                                 derive from the original AT&T Unix, whose development started in 1969">Unix
                                 System</span></strong>. I then venture into Windows but, continue operating and
                         maintainin
@@ -80,7 +83,7 @@
                     <p>Recently started working at Department of National Defense (DND) as a Senior Business Analyst and
                         web developer. I will be also performing reverse engineering and maintenance to existing
                         applications</p>
-                </div><!-- End of About me context -->
+                </div><!-- End of content -->
                 <figure class="single center-image">
                     <img src="./assets/images/GustavoMiller 11152022.jpg" alt="Picture of Mr Miller" height="300">
                 </figure>
@@ -170,11 +173,42 @@
             </section>
         </article><!-- End Work Experience section -->
 
+        <!-- Resume section -->
+        <section id="resume" class="flex-container">
+            <header class="title gradient-header-color">
+                <h3>Resume</h3>
+            </header>
+            <section class="section-wrap">
+                <summary class="intro left-adjust">
+                    <p>I have been blessed with the knowledge of computer languages; and I can understand code. This is
+                        something that comes naturally for me. Now, how do you put this in a resume? Probably -and
+                        arguably, the most valuable important tool in my career. But this document can be daunting; how
+                        to fit in all your knowledge onto one page. Well, I built my resume over the years, I can go as
+                        far as 1998 in my resume, but of course I don’t include that experience anymore on my digital
+                        resume.</p><br />
+                    <p>My resume is so complicated, that I turn it into a system. I have developed a system out of my
+                        resume. Developed in ASP.Net Core 7 - MVC C# and SQL Server (Entity Framework), using Units of
+                        Work pattern and Repositories. There you can read about legacy technology such as Dbase III or
+                        Clipper.</p><br />
+                    <p>But here is my resume: <a
+                            href="http://newconnections-ministries.org/documents/others/gustavo.miller@miller-hs.pdf"
+                            target="_blank">Download Gustavo Miller</a> short resume version</p>
+                </summary>
+            </section>
+        </section><!-- End of resume me section -->
+
         <!-- Contact me section -->
         <section id="contact" class="flex-container">
+
             <header class="title gradient-header-color">
                 <h3>Contact Me</h3>
             </header>
+            <summary class="intro">
+                <p>I have been working for decades as a consultant, in fact I have never worked fulltime in Canada. As a
+                    consultant my role is to understand and evaluate a company’s requirements and needs, their
+                    infrastructure and their current environment and assets. The goal is to design, build, train and
+                    implement a technology solution. In a nutshell I do the scrubbing, cleaning and heavy lifting.</p>
+            </summary>
             <section class="section-wrap">
                 <data class="single">
                     <p>Gustavo Miller</p>
@@ -203,7 +237,7 @@
         </section><!-- End of contact me section -->
 
     </main>
-    
+
 </body>
 
 </html>

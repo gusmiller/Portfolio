@@ -13,16 +13,8 @@
  */
 
 :root {
-  --hide-elements-develop: hidden;
-  --show-elements-develop: visible;
-
+  --line-and-half: 1.5;
+  --large-header-title: 48px;
   --background-body-color:rgb(176, 187, 198);
-  --font-size-regular: 1em;
-  --font-size-increased: 1.25em;
-  --font-navigation-options: 2em;
-  --font-navigation-tablet:1.25em;
-  --font-size-double: 3em;
-  --header-text-color: rgb(217, 220, 214);
-  --application-theme:rgb(42, 96, 124);
-  --application-theme-alternate:rgb(17, 215, 83);
+  --gradient-theme:rgb(42, 96, 124);
 }
