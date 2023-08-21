@@ -52,18 +52,19 @@ This page is used to download my resume. This is linked to an actual resume I ha
 <img src="./Documentation/images/resume.png"  height="350">
 
 ## Contact Me Page
+The contact me page gives the user the option send me a message. The process should (not for this assignment) send an email through the system. I am using a <form> tag element to declare the form.
 
 <img src="./Documentation/images/contactme.png"  height="350">
 
 ## Updating GitHub Repository
-Based on Wikipedia Github is define as "a platform and cloud-based service for software development and version control using Git, allowing developers to store and manage their code." As developers it is important that we keep our versions, in case reversing changes is necessary.
+I have created several issues to track down my tasks. Closing them frequently once done. I have been pushing updates with its corresponding message. Only working versions have been pushed. No branches have been used in this assigment.
 
-Github, though it is integrated nicely in our gui editors such as `Visual Code` or `Visual Studio suits` , we need to understand Git -a version control system. We have use several commands to register our changes in GitHub:
+The commands I have been using are as follow:
 
 <ul>
-<li><strong>git pull</strong> - Download changes and directly merge/integrate new code</li>
-<li><strong>git checkout main</strong> - Checkout the main branch</li>
-<li><strong>git add -A [comments]</strong> - Include comments related to changes. Includes all changes</li>
+<li><strong>git add -A</strong> - Include comments related to changes. Includes all changes</li>
+<li><strong>git commit -m [Message]</strong> - commit changes and update log</li>
+<li><strong>git push -u origin main</strong> - pushes change unto repo</li>
 <li><strong>git pull origin main</strong> - Download changes and directly merge/integrate new code</li>
 <li><strong>git status</strong> - Displays changed files in your working directory</li>
 </ul>
@@ -72,6 +73,8 @@ Github, though it is integrated nicely in our gui editors such as `Visual Code` 
 The last -but not the least, task in our assignment was to upload and post our assignment. As developers we will have to implement our systems -websites or other applications, in different environments; **Developing**, **QA Testing** and **Production**. 
 
 It is important that we spend time understanding the procedures and business parameters or rules, when deploying a ready-for-testing-product or production-version.
+
+URL address for Git-Page:<a target="_blank" href="https://gusmiller.github.io/Portfolio/">https://gusmiller.github.io/Portfolio</a>
 
 <p>Author: <strong>Gustavo Miller</strong></br>
     <a href="mailto:gustavo.miller@miller-hs.com?subject=Carleton Bootcamp experience">gustavo.miller@miller-hs.com"</a>
