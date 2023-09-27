@@ -50,7 +50,6 @@
   
   .title {
     width: 100%;
-    margin-top: 90px;
     padding: 25px;
     text-align: center;
     font-size: var(--large-header-title);
@@ -184,7 +183,7 @@
     }
   
     .header nav {
-      font-size: 22px;
+      font-size: 20px;
     }
   }
   
@@ -195,7 +194,7 @@
     }
   
     .header nav {
-      font-size: 24px;
+      font-size: 22px;
     }
   }
   
@@ -294,8 +293,13 @@
     background-color: #45a049;
   }
   
-  /*----- ENG OF CONTACT -----/
+  /*----- ENG OF CONTACT -----*/
   
+
+  #travelresearcher{
+    background-color: rgb(224, 240, 232);
+  }
+
   /*-------------------------------------------------------------------------------
    This section are the cards in the My Work experience section
    Description: These cards are the opportunities in my career; each card consist 
@@ -365,10 +369,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px auto 80px;
     padding-bottom: 10px;
   }
   
+  .flex-container .increase {
+    margin: 0px auto 80px;
+  }
+
   /*-------------------------------------------------------------------------------
   Section wrap - This flex ITEM will host different flex items 
   Sections - Title, image, headers and so
@@ -411,7 +418,14 @@
     "Roboto", "Noto", sans-serif;
     text-align: left;
   }
-  
+
+  .small-content {
+    width: 50%;
+    font-size: 22px;
+    font-family: "Noto Sans", "Helvetica Neue", "Helvetica", "Arial", "Liberation Sans", 
+    "Roboto", "Noto", sans-serif;
+    text-align: left;
+  }
   .single {
     width: 30%;
   }
