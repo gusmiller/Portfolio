@@ -12,51 +12,453 @@
  * Description: Contains all styles for application
 */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: var(--font-size-regular);
-  min-height: 100vh;
-  background-color: var(--background-body-color);
-}
-
-ol,
-ul {
-  margin-left: 25px;
-  list-style: square inside;
-}
-
-#main {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-/* #about{display: var(--hide-elements-develop);}
-  #experience{display: var(--hide-elements-develop);}
-  #hero{display: var(--hide-elements-develop);}
-  #contact{display: var(--show-elements-develop);} */
-
-.mb {
-  margin-bottom: 25px;
-}
-
-.mt {
-  margin-top: 25px;
-}
-
-.title {
-  width: 100%;
-  padding: 25px;
-  text-align: center;
-  font-size: var(--font-size-double);
-}
-
-.exaltword:hover {
-  text-decoration: underline;
-  font-weight: 800;
-  font-style: italic;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    background-color: var(--background-body-color);
+  }
+  
+  ol,
+  ul {
+    margin-left: 25px;
+    margin-top: 15px;
+    line-height:  var(--line-and-half);
+    font-weight: 700;
+    list-style: square inside;
+  }
+  
+  #main {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .mb {margin-bottom: 25px;}
+  .mt {margin-top: 25px;}
+  .description {font-size: 18px;}
+  
+  h3 {font-family: "Lato", sans-serif; }
+  
+  .left-adjust {
+    text-align: left;
+  }
+  
+  .title {
+    width: 100%;
+    margin-top: 90px;
+    padding: 25px;
+    text-align: center;
+    font-size: var(--large-header-title);
+  }
+  
+  .exaltword:hover {
+    text-decoration: underline;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .intro {
+    font-size: 24px;
+    margin: 20px !important;
+    font-family: "Noto Sans", "Helvetica Neue", "Helvetica", "Arial",
+      "Liberation Sans", "Roboto", "Noto", sans-serif;
+    margin: 32px auto 40px;
+  }
+  
+  /*-------------------------------------------------------------------------------
+   The hero section is the entry point of the application. It presents a graphical 
+   splash screen and options are available at nav bar
+  --------------------------------------------------------------------------------*/
+  .hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero .centered {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+  
+    transform: translate(-50%, -50%);
+  }
+  
+  .hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+    margin: 10px 50px 20px 0;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: var(--large-header-title);
+    font-weight: 300;
+    line-height: 56px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    font-style: italic;
+  }
+  
+  .hero p:hover {
+    color: #cbcb5f;
+    font-size: 28px;
+  }
+  
+  /*----- END OF HERO -----*/
+  
+  /*-------------------------------------------------------------------------------
+  The header Flex container - This flex container contains the navigation link that 
+  allow user to select the sections to review.
+  It starts from the cellphone as a base size, then it changes based on device
+  --------------------------------------------------------------------------------*/
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+  }
+  
+  .header nav {
+    padding-top: 10px;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  
+  .header nav ul {
+    list-style-type: none;
+  }
+  
+  .header nav ul li {
+    /* make sure elements in list are in-line */
+    display: inline-block;
+    margin-left: 25px;
+  }
+  
+  .header nav ul li a {
+    text-decoration: none;
+    color: rgb(217, 220, 214);
+    font-style: italic;
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .header nav {
+      font-size: 22px;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .header h1 {
+      font-size: 32px;
+    }
+  
+    .header nav {
+      font-size: 24px;
+    }
+  }
+  
+  .header a:hover {
+    text-decoration: underline;
+  }
+  
+  .stick-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  /*----- END OF HEADER -----*/
+  
+  /*-------------------------------------------------------------------------------
+   About me Section
+   Description: there is only one flex items that contain text, the second contains
+   the image
+  --------------------------------------------------------------------------------*/
+  #about {
+    height: 100vh;
+    line-height:  var(--line-and-half);
+    text-align: center;
+  }
+  
+  #about .about-column p {
+    font-style: italic;
+    text-align: left;
+    margin: 20px
+  }
+  
+  /*----- END OF ABOUT -----/
+  
+  /*-------------------------------------------------------------------------------
+   The contact section. Contains the input controls and dropdown, including a 
+   submit button. Inserted a 
+  --------------------------------------------------------------------------------*/
+  #contact {
+    height: 100vh;
+    line-height:  var(--line-and-half);
+    text-align: center;
+  }
+  
+  #contact .image-card {
+    width: 80%;
+    margin-top: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    padding: 10px;
+    transform: rotate(8deg);
+    box-shadow: 12px 10px 5px #aaaaaa;
+  }
+  
+  #contact .image-card img {
+    width: 100%;
+  }
+  
+  form {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 16px auto 32px;
+  }
+  
+  /*-------------------------------------------------------------------------------
+  Data entry elements styling. These elements are used to process information such
+  as sending an email in this case
+  --------------------------------------------------------------------------------*/
+  input[type=text],
+  select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px auto 12px;
+    /* display: inline-block; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /*----- ENG OF CONTACT -----/
+  
+  /*-------------------------------------------------------------------------------
+   This section are the cards in the My Work experience section
+   Description: These cards are the opportunities in my career; each card consist 
+   in: a card, an Icon, Title and a description.
+  --------------------------------------------------------------------------------*/
+  #experience {
+    background-color: rgb(187, 192, 179);
+    line-height:  var(--line-and-half);
+    text-align: center;
+  }
+  
+  #experience .card {
+    border: 2px dashed rgb(106, 152, 156);
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  
+  #experience .experience-card {
+    width: 33.33333333%;
+  }
+  
+  #experience .experience-card-current {
+    width: 66.66%;
+    text-align: left;
+    padding: 25px;
+    font-size: 20px;
+  }
+  
+  #experience .card-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  /*-------------------------------------------------------------------------------
+  This section handles the pseudo-class when it matches hover
+  Description: This section will change appearances when user hovers over any of 
+  the cards.    
+  --------------------------------------------------------------------------------*/
+  #experience .card:hover {
+    font-weight: 700;
+    color: brown;
+    border: 2px dashed rgb(142, 20, 161);
+    background-color: rgb(174, 163, 163);
+  }
+  
+  /*----- END OF EXPERIENCE
+  
+  /*-------------------------------------------------------------------------------
+   This section has a small parragraph and a link to a document to be downloaded
+  --------------------------------------------------------------------------------*/
+  #resume {
+    height: 100vh;
+    line-height:  var(--line-and-half);
+    text-align: center;
+  }
+  
+  /*----- END OF RESUME -----*/
+  
+  /*-------------------------------------------------------------------------------
+  Flex container section - This flex container (jumbotron) in where all sections 
+  will base from. It defines the working area and flex items to hold, such as the
+  About Me, Work Experience and contact.
+  --------------------------------------------------------------------------------*/
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px auto 80px;
+    padding-bottom: 10px;
+  }
+  
+  /*-------------------------------------------------------------------------------
+  Section wrap - This flex ITEM will host different flex items 
+  Sections - Title, image, headers and so
+  --------------------------------------------------------------------------------*/
+  .section-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    padding: 10px 30px 10px;
+  }
+  
+  .section-wrap .icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 24px;
+  }
+  
+  .section-wrap h3 {
+    display: block;
+    font-weight: 400;
+    font-size: 26px;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    padding-bottom: 35px;
+  }
+  
+  .section-wrap p {
+    line-height:  var(--line-and-half);
+  }
+  
+  /*----- END OF SECTION WRAP -----*/
+  
+  .content {
+    width: 70%;
+    font-size: 22px;
+    font-family: "Noto Sans", "Helvetica Neue", "Helvetica", "Arial", "Liberation Sans", 
+    "Roboto", "Noto", sans-serif;
+    text-align: left;
+  }
+  
+  .single {
+    width: 30%;
+  }
+  
+  .half-screen {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .center-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* Change the sections header gradient */
+  .gradient-header-color {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), var(--gradient-theme));
+  }
+  
+  /*-------------------------------------------------------------------------------
+  Media query: Change direction and section sizes to make application responsive
+  --------------------------------------------------------------------------------*/
+  @media screen and (max-width: 992px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  
+    .section-wrap {
+      flex-direction: column;
+    }
+  
+    .content {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  
+    .single,
+    .card,
+    #experience .experience-card-current,
+    .experience-card {
+      width: 100% !important;
+    }
+  }
+  
+  /*----- END OF FLEX-CONTAINER ----*/
+  

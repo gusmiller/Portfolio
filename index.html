@@ -12,18 +12,9 @@
     <link rel="stylesheet" href="./assets/css/variables.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- All these stylesheets files will be combined -->
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/hero.css">
-    <link rel="stylesheet" href="./assets/css/flexcontainer.css">
-    <link rel="stylesheet" href="./assets/css/experience.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
-
 </head><!-- Header declarations and stylesheets among others -->
 
 <body>
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <header class="header stick-top">
 
@@ -49,7 +40,9 @@
     <!-- Hero Section -->
     <section id="hero" class="hero" title="Display coding mesh image with HTML and Javascript declarations">
 
-        <div class="hero-container">
+        <img src="./assets/images/portal-html-image-hero.jpg"
+            alt="Graphical banner accross the screen with HTML and Javascript declarations">
+        <div class="centered">
             <h1>Welcome to my Portfolio</h1>
             <p>Coding websites with style</p>
         </div>
@@ -59,18 +52,30 @@
     <main id="main">
 
         <!-- About me section -->
-        <article id="about" class="flex-container">
+        <article id="about" class="about flex-container">
             <header class="title gradient-header-color">
                 <h3>About Me</h3>
             </header>
+            <summary class="intro">
+                <p>My name is <strong>Gustavo Miller</strong>, I am a <span class="exaltword">Senior Systems
+                        Analyst</span>
+                    and <span class="exaltword">Database modeler</span>, self-taught for most of my of my career.
+                    Technology grows faster than one can learn new skills.
+                    Have been serving clients for the last few decades of my career.</p>
+            </summary>
             <!-- Section wrap - we need text and an image -->
             <section class="section-wrap mb">
                 <div class="content">
-                    <h3 class="mt">"Keeping yourself competitive as a developer requires an specific learning skill"
-                    </h3>
-                    <p>I started my career a long time ago when computer OS was MS-Dos and Unix System. I then venture
-                        into Windows but continue in Unix Systems. I know multiple languages from Visual Basic to C#,
-                        HTML, CSS, Javascript</p><br />
+                    <p>I started my career a long time ago when computer OS was
+                        <strong><span class="exaltword" title="MS-DOS, in full Microsoft Disk Operating System, the dominant operating system 
+                                for the personal computer (PC) throughout the 1980s.">MS-Dos</span></strong>
+                        and
+                        <strong><span class="exaltword" title="It is a family of multitasking, multi-user computer operating systems that 
+                                derive from the original AT&T Unix, whose development started in 1969">Unix
+                                System</span></strong>. I then venture into Windows but, continue operating and
+                        maintainin
+                        Unix Systems. I know multiple languages from Visual Basic to C#, HTML, CSS, Javascript
+                    </p><br />
                     <p>Some of my skills include:</p>
                     <ul>
                         <li>Microsoft Access</li>
@@ -82,7 +87,7 @@
                     <p>Recently started working at Department of National Defense (DND) as a Senior Business Analyst and
                         web developer. I will be also performing reverse engineering and maintenance to existing
                         applications</p>
-                </div><!-- End of About me context -->
+                </div><!-- End of content -->
                 <figure class="single center-image">
                     <img src="./assets/images/GustavoMiller 11152022.jpg" alt="Picture of Mr Miller" height="300">
                 </figure>
@@ -103,7 +108,8 @@
             <section class="section-wrap">
                 <article id="current-image" class="card experience-card">
                     <div class="icon">
-                        <img src="./assets/images/onteck.jpg" alt="" height="128">
+                        <a target="_blank" href="http://miller-hs.com/Companies/Incorporate">
+                        <img src="./assets/images/onteck.jpg" alt="Icon image of business briefcase" height="128"></a>
                     </div>
                     <h4 class="card-title mb">OntarioTECK</h4>
                     <div class="description">Senior Systems Analyst / Database modeler. Develop applications in ASP.NET
@@ -126,43 +132,48 @@
                 </article>
             </section>
             <section id="contracts" class="section-wrap">
+                <!-- Experience Card -->
                 <article id="newconnections" title="New Connections Ministries contract" class="card experience-card">
-                    <!-- Experience Card -->
                     <div class="icon">
-                        <img src="./assets/images/ncm.png" alt="" height="64" alt="Icon statistic bars with arrow">
+                        <a target="_blank" href="http://miller-hs.com/Home/WorkExperience/1000">
+                        <img src="./assets/images/ncm.png" 
+                        height="64" alt="Icon statistic bars with arrow"></a>
                     </div>
                     <h4 class="card-title">New Connections Ministries</h4>
                     <div class="description">Board of Directors member. Non for profit organization that helps
                         incarcerated men in their spiritual needs.
                     </div>
                 </article><!-- End of Experience Card -->
+                <!-- Experience Card -->
                 <article id="sharedservices" title="Shared Services Canada" class="card experience-card">
-                    <!-- Experience Card -->
                     <div class="icon">
-                        <img src="./assets/images/ssc.webp" alt="" height="64"
-                            alt="Icon - circle with people's silhouette">
+                        <a target="_blank" href="http://miller-hs.com/Home/WorkExperience/1026">
+                        <img src="./assets/images/ssc.webp" height="64"
+                            alt="Icon - circle with people's silhouette"></a>
                     </div>
                     <h4 class="card-title">Shares Services Canada</h4>
                     <div class="description">Government of Canada agency responsible for advancing, consolidating and
                         providing information technology services across federal government departments.
                     </div>
                 </article><!-- End of Experience Card -->
+                <!-- Experience Card -->
                 <article id="transport" title="Transport Canada - Aviation Security" class="card experience-card">
-                    <!-- Experience Card -->
                     <div class="icon">
-                        <img src="./assets/images/tc.webp" alt="" height="64"
-                            alt="icon airport radar with multiple plane images">
+                        <a target="_blank" href="http://miller-hs.com/Home/WorkExperience/1004">
+                        <img src="./assets/images/tc.webp" height="64"
+                            alt="icon airport radar with multiple plane images"></a>
                     </div>
                     <h4 class="card-title">Transport Canada - Aviation Security</h4>
                     <div class="description">Transport Canada is responsible for aviation security in Canada. The
                         department develops, implements, and oversees Canada’s civil Aviation Security Program.
                     </div>
                 </article><!-- End of Experience Card -->
-                <article id="dnd" title="Transport Canada - Aviation Security" class="card experience-card">
-                    <!-- Experience Card -->
+                <!-- Experience Card -->
+                <article id="dnd" title="Department of National Defense" class="card experience-card">
                     <div class="icon">
-                        <img src="./assets/images/tc.webp" alt="" height="64"
-                            alt="icon airport radar with multiple plane images">
+                        <a target="_blank" href="http://miller-hs.com/Home/WorkExperience/1003">
+                        <img src="./assets/images/aroc-icon@2x.png" alt="" height="64"
+                            alt="icon war transportation plane images"></a>
                     </div>
                     <h4 class="card-title">Department of National Defense</h4>
                     <div class="description">Department of National Defense is responsible for national security in
@@ -172,6 +183,7 @@
             </section>
         </article><!-- End Work Experience section -->
 
+<<<<<<< HEAD
         <!-- Project 01 Travel Researcher -->
         <section id="travelresearcher" class="flex-container" style="margin-bottom: 50px;">
             <header class="title gradient-header-color">
@@ -205,12 +217,44 @@
             </section><!-- End Section wrap -->
 
         </section><!-- End of contact me section -->
+=======
+        <!-- Resume section -->
+        <section id="resume" class="flex-container">
+            <header class="title gradient-header-color">
+                <h3>Resume</h3>
+            </header>
+            <section class="section-wrap">
+                <summary class="intro left-adjust">
+                    <p>I have been blessed with the knowledge of computer languages; and I can understand code. This is
+                        something that comes naturally for me. Now, how do you put this in a resume? Probably -and
+                        arguably, the most valuable important tool in my career. But this document can be daunting; how
+                        to fit in all your knowledge onto one page. Well, I built my resume over the years, I can go as
+                        far as 1998 in my resume, but of course I don’t include that experience anymore on my digital
+                        resume.</p><br />
+                    <p>My resume is so complicated, that I turn it into a system. I have developed a system out of my
+                        resume. Developed in ASP.Net Core 7 - MVC C# and SQL Server (Entity Framework), using Units of
+                        Work pattern and Repositories. There you can read about legacy technology such as Dbase III or
+                        Clipper.</p><br />
+                    <p>But here is my resume: <a
+                            href="http://newconnections-ministries.org/documents/others/gustavo.miller@miller-hs.pdf"
+                            target="_blank">Download Gustavo Miller</a> short resume version</p>
+                </summary>
+            </section>
+        </section><!-- End of resume me section -->
+>>>>>>> 84a46fa2b2c930674a125151fa3fdffae065e7fd
 
         <!-- Contact me section -->
         <section id="contact" class="flex-container">
+
             <header class="title gradient-header-color">
                 <h3>Contact Me</h3>
             </header>
+            <summary class="intro">
+                <p>I have been working for decades as a consultant, in fact I have never worked fulltime in Canada. As a
+                    consultant my role is to understand and evaluate a company’s requirements and needs, their
+                    infrastructure and their current environment and assets. The goal is to design, build, train and
+                    implement a technology solution. In a nutshell I do the scrubbing, cleaning and heavy lifting.</p>
+            </summary>
             <section class="section-wrap">
                 <data class="single">
                     <p>Gustavo Miller</p>
@@ -240,27 +284,6 @@
 
     </main>
 
-    <script>
-        // Get the button
-        const mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 </body>
 
 </html>
